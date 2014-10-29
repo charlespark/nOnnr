@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>rnnOn</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'jquery-ui' => true %>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<% if current_user %>
+	Signed in as <%= current_user.name %>!
+	<% link_to "Sign out", signout_path %>
+	<% else %>
+	<%= link_to "Sign in with Twitter", "auth/twitter" %>
+<% end %>
+
+<%= yield %>
+
+</body>
+</html>
+
+  <%#= javascript_include_tag 'application', 'data-turbolinks-track', 'jquery-ui' => true %>

@@ -1,0 +1,45 @@
+<%= form_for @note, :html => {:id => 'note-submission'} do |f| %>
+  <% if @note.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@note.errors.count, "error") %> prohibited this note from being saved:</h2>
+
+      <ul>
+      <% @note.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :your_word %>
+    <h2><%= @word %></h2>
+    <%= f.hidden_field :word, :value => @word %>
+  </div>
+
+  <div class="field">
+    <%= f.label :definition %>
+    <h3><%= @meaning %></h3>
+    <%= f.hidden_field :meaning, :value => @meaning %>
+  </div>
+
+  <div class="field">
+    <%= f.label "Write Whatever Comes to Mind | Keep Writing for 60 Seconds!" %><br>
+    <%= f.text_area :content, :size => "70%x5%" %>
+  </div>
+
+  <div class="clock">
+    <div id="CountDownTimer" data-timer="10">
+    </div>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+  <div class="field">
+    <%= f.label :time %><br>
+    <%= @local_time %>
+    <%= f.hidden_field :local_time, :value => @local_time %>
+  </div>
+<% end %>

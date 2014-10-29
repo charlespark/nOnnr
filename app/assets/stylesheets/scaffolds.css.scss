@@ -1,0 +1,131 @@
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: georgia, serif;
+  font-size: 13px;
+  line-height: 18px;
+  background :url('brickwall_@2X.png');
+  background-repeat: repeat;
+}
+
+p, ol, ul, td {
+  font-family: georgia, serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+
+pre {
+  font-family: georgia, serif;
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  font-family: georgia, serif;
+  color: #000;
+  &:visited {
+    color: #666;
+  }
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
+
+.field, .actions {
+  font-family: georgia, serif;
+  margin-bottom: 10px;
+  text-align: center;
+}
+  
+.clock {
+  }
+
+#CountDownTimer {
+  font-family: georgia, serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+}
+
+h1, th {
+  text-align: center;
+  font-family: georgia, serif;
+}
+
+h2 {
+  text-align: center;
+  font-family: georgia, serif;
+  color: #3333FF;
+}  
+
+h3 {
+  text-align: center;
+  font-family: georgia, serif;
+  color: #FF0000;
+}
+
+.center {
+  text-align: center;
+  font-family: georgia, serif;
+}
+
+#notice {
+  color: green;
+  font-family: georgia, serif;
+}
+
+.field_with_errors {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: georgia, serif;
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: georgia, serif;
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    font-family: georgia, serif;
+    list-style: square;
+  }
+}
+
+table {
+  font-family: georgia, serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  tr {
+    border-bottom: 10px solid transparent;
+    border-right: 5px solid transparent;
+  }
+  th {
+    text-align: center;
+    font-size: 16px;
+
+  }
+}

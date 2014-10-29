@@ -1,0 +1,21 @@
+<div class="center">
+<p id="notice"><%= notice %></p>
+<p>
+  <strong>Word:</strong><br>
+  <%= @note.word %>
+</p>
+<p>
+  <strong>Definition:</strong><br>
+  <%= @note.meaning %>
+</p>
+<p>
+  <strong>Content:</strong><br>
+  <%= @note.content %>
+</p>
+<p>
+  <strong>Published:</strong><br>
+  <%= @note.local_time %>
+</p>
+<%#= link_to 'Edit', edit_note_path(@note) %> <!-- | -->
+<%= link_to 'Index', notes_path %>
+</div>

@@ -49,6 +49,8 @@ gem 'httparty'
 
 gem 'jquery-ui-rails'
 
+gem 'rails_12factor'
+
 group :development do
   gem "better_errors"
   gem 'binding_of_caller', '~> 0.7.2'

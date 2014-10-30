@@ -11,25 +11,44 @@
     </div>
   <% end %>
 
+<div class="creation">
+<table cellpadding="10">
+  <tr>
   <div class="field">
-    <%= f.label :your_word %>
+    <th valign=bottom><%= f.label :your_word %></th>
+    <td valign=top><h2><%= @word %></h2></td>
+    <td><%= f.hidden_field :word, :value => @word %></td>
+  </div>
+
+  <tr>
+  <div class="field">
+    <th><%= f.label :definition %></th>
+    <td valign=top><h3><%= @meaning %></h3></td>
+    <td><%= f.hidden_field :meaning, :value => @meaning %></td>
+  </div>
+  </tr>
+</table>
+</div>
+
+<!--   <div class="field">
+    <%#= f.label :your_word %>
     <h2><%= @word %></h2>
-    <%= f.hidden_field :word, :value => @word %>
+    <%#= f.hidden_field :word, :value => @word %>
   </div>
 
   <div class="field">
-    <%= f.label :definition %>
+    <%#= f.label :definition %>
     <h3><%= @meaning %></h3>
-    <%= f.hidden_field :meaning, :value => @meaning %>
-  </div>
-
+    <%#= f.hidden_field :meaning, :value => @meaning %>
+  </div> -->
+<br>
   <div class="field">
     <%= f.label "Write Whatever Comes to Mind | Keep Writing for 60 Seconds!" %><br>
-    <%= f.text_area :content, :size => "70%x5%" %>
+    <%= f.text_area :content, :size => "70%x5%", :value => "Start Writing!" %>
   </div>
 
   <div class="clock">
-    <div id="CountDownTimer" data-timer="10">
+    <div id="CountDownTimer" data-timer="60">
     </div>
   </div>
 

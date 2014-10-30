@@ -970,6 +970,6 @@ $("#CountDownTimer").TimeCircles({
 				show: true}
 			}
     });            
-setTimeout(function() { $('#note-submission').submit(); }, 10000);
+setTimeout(function() { $('#note-submission').submit(); }, 60000);
 
 });

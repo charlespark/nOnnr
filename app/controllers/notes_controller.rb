@@ -43,11 +43,14 @@ class NotesController < ApplicationController
     
      # puts response.body, response.code, response.message, response.headers.inspect
     @returned_json = JSON.parse(@response.body)
-    @word = @returned_json["word"].upcase
+    @word = @returned_json["word"]
+
+    @url = 'http://api.wordnik.com:80/v4/word.json/' + @word + '/definitions?limit=200&includeRelated=false&useCanonical=false&includeTags=false&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5'
+    @gather = HTTParty.get(@url)
+    @spitback = JSON.parse(@gather.body)
+    @meaning = @spitback[0]["text"]
 
     @local_time = Time.zone.now.in_time_zone("Pacific Time (US & Canada)").strftime("%A, %B %-d, %Y %l:%M %p %Z")
-
-
 
     respond_to do |format|
       if @note.save

@@ -4,7 +4,7 @@ body {
   font-family: georgia, serif;
   font-size: 13px;
   line-height: 18px;
-  background :url('brickwall_@2X.png');
+  background :url('ricepaper_v3_@2X.png');
   background-repeat: repeat;
 }
 
@@ -51,11 +51,10 @@ a {
   height: 200px;
 }
 
-h1, th {
-  text-align: center;
+/*h1 {
   font-family: georgia, serif;
 }
-
+*/
 h2 {
   text-align: center;
   font-family: georgia, serif;
@@ -66,6 +65,11 @@ h3 {
   text-align: center;
   font-family: georgia, serif;
   color: #FF0000;
+}
+
+th {
+  text-align: center;
+  font-family: georgia, serif;
 }
 
 .center {
@@ -118,7 +122,7 @@ table {
   font-family: georgia, serif;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 75%;
   tr {
     border-bottom: 10px solid transparent;
     border-right: 5px solid transparent;
@@ -126,6 +130,51 @@ table {
   th {
     text-align: center;
     font-size: 16px;
-
   }
+}
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1em;
+  color: #000000;
+  text-decoration: none;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777777;
+}
+
+.home {
+  font-family: georgia, serif;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.creation {
+  font-family: georgia, serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 68%;
+  tr {
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid transparent;
+  }
+/*  th {
+    text-align: center;
+    font-size: 16px;
+  }*/
 }

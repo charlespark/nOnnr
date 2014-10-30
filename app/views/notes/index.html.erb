@@ -20,8 +20,8 @@
         <td><%= note.meaning %></td>
         <td><%= note.content %></td>
         <td><%= note.local_time %></td>
-        <td><%= link_to 'Show', note %></td>
-        <td><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><strong><%= link_to 'Show', note %></strong></td>
+        <td><strong><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></strong></td>
 <!--         <td><%#= link_to 'Edit', edit_note_path(note) %></td> -->
 
       </tr>
@@ -30,6 +30,6 @@
 </table>
 
 <br>
-
-<%= link_to 'New rnnOn', new_note_path %>
+<strong><%= link_to 'New rnnOn', new_note_path %></strong>
 </div>
+<br>

@@ -55,7 +55,6 @@ gem 'jquery-ui-rails'
 
 gem 'rails_12factor'
 
-
 gem 'devise', '~> 3.4.1'
 
 gem 'bundler'

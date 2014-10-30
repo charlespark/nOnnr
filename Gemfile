@@ -4,7 +4,10 @@ gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'
 gem 'bson_ext'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'
+<<<<<<< HEAD
 
+=======
+>>>>>>> 157d6519633a59ed40e1c4c9e50073a617aa495e
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -52,9 +55,13 @@ gem 'jquery-ui-rails'
 
 gem 'rails_12factor'
 
+<<<<<<< HEAD
 gem 'devise', '~> 3.4.1'
 
 gem 'mongoid-rspec', '~> 2.0.0.rc1'
+=======
+gem 'bundler'
+>>>>>>> 157d6519633a59ed40e1c4c9e50073a617aa495e
 
 group :development do
   gem "better_errors"

@@ -1,11 +1,19 @@
 require File.expand_path('../boot', __FILE__)
 
+<<<<<<< HEAD
 # Pick the frameworks you want:
 # require "active_record/railtie"
 require "action_controller/railtie"
 require "action_mailer/railtie"
 require "sprockets/railtie"
 require "rails/test_unit/railtie"
+=======
+require "action_controller/railtie"
+require "action_mailer/railtie"
+# require "active_resource/railtie" # Comment this line for Rails 4.0+
+require "rails/test_unit/railtie"
+# require "sprockets/railtie" # Uncomment this line for Rails 3.1+
+>>>>>>> 157d6519633a59ed40e1c4c9e50073a617aa495e
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.

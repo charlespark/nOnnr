@@ -1,28 +1,23 @@
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+README - 'rnnOn'
+General Assembly - Web Development Immersive 9
+Project Four submission
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+This repository is housed at https://github.com/charlespark/nOnnr
+
+Pivotal Tracker is at https://www.pivotaltracker.com/n/projects/1190106
+
+Heroku is at https://rnnon.herokuapp.com/
+
+Thanks to Dan, Micah and Evan for the learnings, instruction and advice.
+Thanks to Taylor for keeping the ship steady throughout.
+
+Thanks to the entire WDI 9 LA cohort for the support, guidance, strength and friendship.
+
+rnnOn is developed in Ruby on Rails, with JQuery thrown (countdown clock and Wordnik APIs)
+
+Mongo DB is used for the database, with Devise for Authentication.
+
+As rnnOn is currently NOT functioning on Heroku, please run using 'localhost:3000', with a rails server set up as well as an instance of mongod running.
+
+Enjoy, I look forward to feedback.

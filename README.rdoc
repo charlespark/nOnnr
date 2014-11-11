@@ -3,7 +3,7 @@ General Assembly - Web Development Immersive 9
 Project Four submission
 
 
-This repository is housed at https://github.com/charlespark/nOnnr
+This repository is housed at https://github.com/charlespark/rnnOn
 
 Pivotal Tracker is at https://www.pivotaltracker.com/n/projects/1190106
 

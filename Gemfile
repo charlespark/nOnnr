@@ -59,6 +59,8 @@ gem 'devise', '~> 3.4.1'
 
 gem 'bundler'
 
+gem 'nokogiri', '~> 1.6.4.1'
+
 group :development do
   gem "better_errors"
   gem 'binding_of_caller', '~> 0.7.2'
